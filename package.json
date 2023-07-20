@@ -1,0 +1,58 @@
+{
+  "name": "mernres",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": "16.16.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "build-start": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zut4toO/mern-restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zut4toO/mern-restaurant/issues"
+  },
+  "homepage": "https://github.com/Zut4toO/mern-restaurant#readme",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.16",
+    "axios": "^1.1.3",
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.32.0",
+    "concurrently": "^7.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "googleapis": "^97.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^6.2.6",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.7",
+    "node-thermal-printer": "^4.1.2",
+    "nodemailer": "^6.7.2",
+    "path": "^0.12.7",
+    "router": "^1.3.6",
+    "sharp": "^0.31.1",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
+}

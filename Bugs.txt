@@ -1,0 +1,1 @@
+uncaught typeerror: navigate.push is not a function

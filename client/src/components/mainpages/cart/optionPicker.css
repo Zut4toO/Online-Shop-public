@@ -1,0 +1,16 @@
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + label {
+    cursor: pointer;
+    padding: 7px;
+  }
+
+
+  

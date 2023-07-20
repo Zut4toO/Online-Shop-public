@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.example {
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #111827
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #334155
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1f2937;
+  
+}
+
+/*Change text in autofill textbox*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 999999s ease-out, background-color 999999s ease-out";
+    -webkit-transition-delay: 999999s;
+}
+
+@media screen and (max-width:700px){
+  .notimage{
+    display: none !important;
+  }
+}
