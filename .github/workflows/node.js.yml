@@ -8,8 +8,8 @@ on:
     branches: ['master']
 
 jobs:
-  berlin-doener-obernkirchen:
-    runs-on: [self-hosted, berlin-doener-obernkirchen.de]
+  anonym:
+    runs-on: [self-hosted, anonym.xy]
     strategy:
       matrix:
         node-version: [16.x]
